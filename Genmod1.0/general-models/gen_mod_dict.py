@@ -80,7 +80,7 @@ ratio_2_mean = 0.25
 # set up model scenario
 # choose one of the following or make a new one
 
-scen = 5
+scen = 6
 
 if scen == 1:
     scenario_dir = 'base'
@@ -116,6 +116,14 @@ if scen == 5:
     num_surf_layers = 3
     GHB = False
     GHB_sea = True
+	
+if scen ==6:
+	scenario_dir = "layers_GHB_sea_septic"
+	add_bedrock = True
+	num_surf_layers = 3
+	GHB = False
+	GHB_sea = True
+	septic = True
     
 # make initial guesses for K
 # new values will happen because of the JN4 in which parameter estimation occurs
