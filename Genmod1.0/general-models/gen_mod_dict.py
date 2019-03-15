@@ -151,6 +151,20 @@ rock_riv_dict['stream_bed_kadjust'] = 1.0
 rock_riv_dict['coastal_sed_thk'] = 5.0
 rock_riv_dict['coastal_sed_kadjust'] = 50.0
 
+
+#water use parameters
+consumpRes = 0.15	#consumptive fraction of water use for residential users, from 
+#		Shaffer, Kimberly H., and Donna L. Runkle. “Consumptive Water-Use Coefficients 
+#		for the Great Lakes Basin and Climatically Similar Areas.” Report. Scientific 
+#		Investigations Report, 2007. USGS Publications Warehouse. https://doi.org/10.3133/sir20075197.
+
+useResPerCap = 0.18 	#per capita use, m3/d, based on the median value (0.47 gallons / day) from model area from 
+#		Dieter, Cheryl A., Kristin S. Linsey, Rodney R. Caldwell, Melissa A. Harris, Tamara I. Ivahnenko, John K. Lovelace, 
+#		Molly A. Maupin, and Nancy L. Barber. “Estimated Use of Water in the United States County-Level Data 
+#		for 2015.” U.S. Geological Survey Data Release, June 2018. 
+#		https://www.sciencebase.gov/catalog/item/5af3311be4b0da30c1b245d8.
+
+
 #variables for sea-level
 sea_level = 0 #elevation of sea level (m)
 den_salt = 1022 #density of saltwater in kg/m3, this is based on 29 ppt salinity at 10C
@@ -161,7 +175,7 @@ den_fresh = 1000 #density of freshwater in kg/m3
 model_dict = {}
 
 model_dict['Assabet'] = {'ws':'Assabet','vpu':'NHDPlusNE/NHDPlus01','rpu':'ned01a','df':'Concord_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m}
-model_dict['CoastalCT'] = {'ws':'CoastalCT','vpu':'NHDPlusNE_MA/NHDPlus01_02','rpu':'ned01a_02b','df':'CoastalCT_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m, 'zone_src': 'LIS_WS_EMBAY_DISS.shp'}
+model_dict['CoastalCT'] = {'ws':'CoastalCT','vpu':'NHDPlusNE_MA/NHDPlus01_02','rpu':'ned01a_02b','df':'CoastalCT_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m, 'zone_src': 'LIS_WS_EMBAY_DISS.shp', 'sewer_src': 'CoastalCT_Sewer.shp', 'pws_src': 'CoastalCT_WaterSupply.shp'}
 #model_dict['Board2'] = {'ws':'Board2','vpu':'NHDPlusGL/NHDPlus04','rpu':'ned04d','df':'Board_domain.shp', 'ib_filter':0, 'K_bedrock':100 * ft2m}
 #model_dict['CONN'] = {'ws':'CONN','vpu':'NHDPlusNE/NHDPlus01','rpu':'ned01a','df':'Pomperaug_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m}
 #model_dict['huc_07030001_domain'] = {'ws':'huc_07030001_domain','vpu':'NHDPlusMS/NHDPlus07','rpu':'ned07c','df':'huc_07030001_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m}

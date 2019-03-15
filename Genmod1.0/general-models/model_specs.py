@@ -157,6 +157,10 @@ recharge_reitz = base_dir + '/input_data/recharge_Reitz/2013'
 alt_recharge_wolock = base_dir + '/input_data/recharge_Wolock'
 
 
+#population density comes from 2010 census data in 60m rasters, persons per km2
+#			Falcone, J.A., 2016, U.S. block-level population density rasters for 1990, 2000, and 2010: U.S. Geological 
+#			Survey data release, http://dx.doi.org/10.5066/F74J0C6M.
+pop_den_dir = base_dir + '/input_data/pden2010_block/pden2010_block/'
 
 # paths to executables
 mfpth = base_dir + '/executables/MODFLOW-NWT_1.0.9/bin/MODFLOW-NWT_64.exe'
