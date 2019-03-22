@@ -88,6 +88,8 @@ if scen == 1:
     num_surf_layers = 1
     GHB = False
     GHB_sea = False
+    septic = False
+    wells = False
 
 if scen == 2:
     scenario_dir = 'bedrock'
@@ -95,6 +97,8 @@ if scen == 2:
     num_surf_layers = 1
     GHB = False
     GHB_sea = False
+    septic = False
+    wells = False
 
 if scen == 3:
     scenario_dir = 'layers'
@@ -102,6 +106,8 @@ if scen == 3:
     num_surf_layers = 3
     GHB = False
     GHB_sea = False
+    septic = False
+    wells = False
 
 if scen == 4:
     scenario_dir = 'layers_GHB'
@@ -109,6 +115,8 @@ if scen == 4:
     num_surf_layers = 3
     GHB = True
     GHB_sea = False
+    septic = False
+    wells = False
 	
 if scen == 5:
     scenario_dir = 'layers_GHB_sea'
@@ -116,14 +124,17 @@ if scen == 5:
     num_surf_layers = 3
     GHB = False
     GHB_sea = True
+    septic = False
+    wells = False
 	
 if scen ==6:
-	scenario_dir = "layers_GHB_sea_septic"
-	add_bedrock = True
-	num_surf_layers = 3
-	GHB = False
-	GHB_sea = True
-	septic = True
+    scenario_dir = "layers_GHB_sea_septic"
+    add_bedrock = True
+    num_surf_layers = 3
+    GHB = False
+    GHB_sea = True
+    septic = True
+    wells = True
     
 # make initial guesses for K
 # new values will happen because of the JN4 in which parameter estimation occurs
@@ -175,7 +186,7 @@ den_fresh = 1000 #density of freshwater in kg/m3
 model_dict = {}
 
 model_dict['Assabet'] = {'ws':'Assabet','vpu':'NHDPlusNE/NHDPlus01','rpu':'ned01a','df':'Concord_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m}
-model_dict['CoastalCT'] = {'ws':'CoastalCT','vpu':'NHDPlusNE_MA/NHDPlus01_02','rpu':'ned01a_02b','df':'CoastalCT_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m, 'zone_src': 'LIS_WS_EMBAY_DISS.shp', 'sewer_src': 'CoastalCT_Sewer.shp', 'pws_src': 'CoastalCT_WaterSupply.shp'}
+model_dict['CoastalCT'] = {'ws':'CoastalCT','vpu':'NHDPlusNE_MA/NHDPlus01_02','rpu':'ned01a_02b','df':'CoastalCT_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m, 'zone_src': 'LIS_WS_EMBAY_DISS.shp', 'sewer_src': 'CoastalCT_Sewer.shp', 'pws_src': 'CoastalCT_WaterSupply.shp', 'well_src':'PWS_well_estimates.shp'}
 #model_dict['Board2'] = {'ws':'Board2','vpu':'NHDPlusGL/NHDPlus04','rpu':'ned04d','df':'Board_domain.shp', 'ib_filter':0, 'K_bedrock':100 * ft2m}
 #model_dict['CONN'] = {'ws':'CONN','vpu':'NHDPlusNE/NHDPlus01','rpu':'ned01a','df':'Pomperaug_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m}
 #model_dict['huc_07030001_domain'] = {'ws':'huc_07030001_domain','vpu':'NHDPlusMS/NHDPlus07','rpu':'ned07c','df':'huc_07030001_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m}
