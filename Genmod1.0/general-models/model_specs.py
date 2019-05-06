@@ -162,7 +162,7 @@ alt_recharge_wolock = base_dir + '/input_data/recharge_Wolock'
 #			 and James E. Reddy. “Digital Products from a Hydrogeologic Framework for Quaternary 
 #			 Sediments within the Glaciated Conterminous United States.” U.S. Geological Survey 
 #			 Data Release, 2018. https://doi.org/10.5066/F7HH6J8X.
-alt_recharge_SWB_NAWQA = base_dir + '/input_data/recharge_SWB_NAWAQ'
+alt_recharge_SWB_NAWQA = base_dir + '/input_data/recharge_SWB_NAWQA'
 
 
 
