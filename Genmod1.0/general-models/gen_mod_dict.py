@@ -169,7 +169,7 @@ consumpRes = 0.15	#consumptive fraction of water use for residential users, from
 #		for the Great Lakes Basin and Climatically Similar Areas.” Report. Scientific 
 #		Investigations Report, 2007. USGS Publications Warehouse. https://doi.org/10.3133/sir20075197.
 
-useResPerCap = 0.18 	#per capita use, m3/d, based on the median value (0.47 gallons / day) from model area from 
+useResPerCap = 0.18 	#per capita use, m3/d, based on the median value (47 gallons / day) from model area from 
 #		Dieter, Cheryl A., Kristin S. Linsey, Rodney R. Caldwell, Melissa A. Harris, Tamara I. Ivahnenko, John K. Lovelace, 
 #		Molly A. Maupin, and Nancy L. Barber. “Estimated Use of Water in the United States County-Level Data 
 #		for 2015.” U.S. Geological Survey Data Release, June 2018. 
