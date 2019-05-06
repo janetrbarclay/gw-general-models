@@ -140,7 +140,7 @@ soller_bedrock_topo_dir = base_dir + '/input_data/Soller/sim3392_spatialdata/sim
 #           https://doi.org/10.3133/sim3392
 soller_surf_thick_dir = base_dir + '/input_data/Soller/sim3392_spatialdata/sim3392_sheet1'   
 
-#Two sources for recharge values:
+#Three sources for recharge values:
 
 #Used for recharge, Reitz published values
 #            Reitz, Meredith, Sanford, W.E., Senay, G.B., and Cazenas, Jeffrey, 2017, Annual estimates of recharge, 
@@ -155,6 +155,16 @@ recharge_reitz = base_dir + '/input_data/recharge_Reitz/2013'
 #            conterminous United States: U.S. Geological Survey Open-File Report 03-311, 
 #            available at https://water.usgs.gov/lookup/getspatial?rech48grd
 alt_recharge_wolock = base_dir + '/input_data/recharge_Wolock'
+
+
+#The SWB-NAWQA recharge below is included as an alternative to Reitz for comparison purposes; user will have to specify in JN3
+#            Yager, Richard M., Leon J. Kauffman, Cheryl A. Buchwald, Stephen Westenbroek M., 
+#			 and James E. Reddy. “Digital Products from a Hydrogeologic Framework for Quaternary 
+#			 Sediments within the Glaciated Conterminous United States.” U.S. Geological Survey 
+#			 Data Release, 2018. https://doi.org/10.5066/F7HH6J8X.
+alt_recharge_SWB_NAWQA = base_dir + '/input_data/recharge_SWB_NAWAQ'
+
+
 
 
 #population density comes from 2010 census data in 60m rasters, persons per km2
