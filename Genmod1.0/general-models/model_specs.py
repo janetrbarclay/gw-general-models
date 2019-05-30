@@ -140,6 +140,12 @@ soller_bedrock_topo_dir = base_dir + '/input_data/Soller/sim3392_spatialdata/sim
 #           https://doi.org/10.3133/sim3392
 soller_surf_thick_dir = base_dir + '/input_data/Soller/sim3392_spatialdata/sim3392_sheet1'   
 
+#Alternate surficial thickness
+#           Yager, Richard M., Leon J. Kauffman, Cheryl A. Buchwald, Stephen Westenbroek M., 
+#			and James E. Reddy. �Digital Products from a Hydrogeologic Framework for Quaternary 
+#			Sediments within the Glaciated Conterminous United States.� U.S. Geological Survey Data Release, 2018. https://doi.org/10.5066/F7HH6J8X.
+kauffman_surf_thick_dir = base_dir + '/input_data/thickness_Kauffman'   
+
 #Three sources for recharge values:
 
 #Used for recharge, Reitz published values
