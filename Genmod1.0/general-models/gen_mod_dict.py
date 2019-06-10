@@ -90,6 +90,7 @@ if scen == 1:
     GHB_sea = False
     septic = False
     wells = False
+    bedConfined = False
 
 if scen == 2:
     scenario_dir = 'bedrock'
@@ -99,6 +100,7 @@ if scen == 2:
     GHB_sea = False
     septic = False
     wells = False
+    bedConfined = False
 
 if scen == 3:
     scenario_dir = 'layers'
@@ -108,6 +110,7 @@ if scen == 3:
     GHB_sea = False
     septic = False
     wells = False
+    bedConfined = False
 
 if scen == 4:
     scenario_dir = 'layers_GHB'
@@ -117,6 +120,7 @@ if scen == 4:
     GHB_sea = False
     septic = False
     wells = False
+    bedConfined = False
 	
 if scen == 5:
     scenario_dir = 'layers_GHB_sea'
@@ -126,6 +130,7 @@ if scen == 5:
     GHB_sea = True
     septic = False
     wells = False
+    bedConfined = False
 	
 if scen ==6:
     scenario_dir = "layers_GHB_sea_septic"
@@ -135,6 +140,7 @@ if scen ==6:
     GHB_sea = True
     septic = True
     wells = True
+    bedConfined = False
     
 # make initial guesses for K
 # new values will happen because of the JN4 in which parameter estimation occurs
