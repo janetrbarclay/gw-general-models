@@ -186,7 +186,7 @@ den_fresh = 1000 #density of freshwater in kg/m3
 model_dict = {}
 
 model_dict['Assabet'] = {'ws':'Assabet','vpu':'NHDPlusNE/NHDPlus01','rpu':'ned01a','df':'Concord_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m}
-model_dict['CoastalCT'] = {'ws':'CoastalCT','vpu':'NHDPlusNE_MA/NHDPlus01_02','rpu':'ned01a_02b','df':'CoastalCT_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m, 'zone_src': 'LIS_WS_EMBAY_DISS.shp', 'sewer_src': 'CoastalCT_Sewer.shp', 'pws_src': 'CoastalCT_WaterSupply.shp', 'well_src':'PWS_well_estimates.shp'}
+model_dict['CoastalCT'] = {'ws':'CoastalCT','vpu':'NHDPlusNE_MA/NHDPlus01_02','rpu':'ned01a_02b','df':'CoastalCT_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m, 'zone_src': 'LIS_WS_EMBAY_DISS.shp', 'sewer_src': 'CoastalCT_Sewer.shp', 'pws_src': 'CoastalCT_WaterSupply.shp', 'well_src':'PWS_well_estimates.shp', 'saltwater_src':'CoastalBoundary.shp'}
 #model_dict['Board2'] = {'ws':'Board2','vpu':'NHDPlusGL/NHDPlus04','rpu':'ned04d','df':'Board_domain.shp', 'ib_filter':0, 'K_bedrock':100 * ft2m}
 #model_dict['CONN'] = {'ws':'CONN','vpu':'NHDPlusNE/NHDPlus01','rpu':'ned01a','df':'Pomperaug_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m}
 #model_dict['huc_07030001_domain'] = {'ws':'huc_07030001_domain','vpu':'NHDPlusMS/NHDPlus07','rpu':'ned07c','df':'huc_07030001_domain.shp', 'ib_filter':0, 'K_bedrock':1 * ft2m}
