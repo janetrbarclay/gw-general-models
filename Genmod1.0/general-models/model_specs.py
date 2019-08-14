@@ -118,6 +118,7 @@ qa_dir = base_dir + '/input_data/Geology'
 #Used for many things. Published and available at:  http://www.horizon-systems.com/NHDPlus/NHDPlusV2_data.php 
 nhd_dir = base_dir + '/input_data/NHDPlusV2Data'
 
+#slope_degree was added to this dataset using the Slope tool in the Spatial Analyst toolbox in ArcMap 10.7 with units of degree and the planar method
 
 #Used for landcover in JN5 in a separate series of notebooks that determine groundwater residence time distributions (GRTD)       
 #            Homer, C.G., Dewitz, J.A., Yang, L., Jin, S., Danielson, P., Xian, G., Coulston, J., Herold, N.D., 
