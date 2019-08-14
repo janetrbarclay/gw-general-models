@@ -118,6 +118,7 @@ qa_dir = base_dir + '/input_data/Geology'
 #Used for many things. Published and available at:  http://www.horizon-systems.com/NHDPlus/NHDPlusV2_data.php 
 nhd_dir = base_dir + '/input_data/NHDPlusV2Data'
 
+
 #Used for landcover in JN5 in a separate series of notebooks that determine groundwater residence time distributions (GRTD)       
 #            Homer, C.G., Dewitz, J.A., Yang, L., Jin, S., Danielson, P., Xian, G., Coulston, J., Herold, N.D., 
 #            Wickham, J.D., and Megown, K., 2015, Completion of the 2011 National Land Cover Database for the 
