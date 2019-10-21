@@ -142,7 +142,7 @@ if scen ==6:
     wells = True
     bedConfined = False
     
-# make initial guesses for K
+# make initial guesses for K (these set the streambed K values which don't vary with calibration)
 # new values will happen because of the JN4 in which parameter estimation occurs
 K_dict = {}
 K_dict['K_fine'] = 10.0 * ft2m
@@ -166,7 +166,7 @@ rock_riv_dict['river_depth'] = 10. * ft2m
 rock_riv_dict['bedrock_thk'] = 100.0 * ft2m
 rock_riv_dict['stream_bed_kadjust'] = 1.0
 rock_riv_dict['coastal_sed_thk'] = 5.0
-rock_riv_dict['coastal_sed_kadjust'] = 50.0
+rock_riv_dict['coastal_sed_kadjust'] = 5.0
 
 
 #water use parameters
