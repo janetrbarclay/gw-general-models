@@ -3,3 +3,13 @@ Genmod1.0/input_data/DEM_Bath_Befus_Kroeger/east_cdem_v1.zip
 Genmod1.0/input_data/
 Genmod1.0/subprojects/siteGeneral/CoastalCT/col.tif
 Genmod1.0/archivedFiles/
+*.mpbas
+*.mplst
+*.mpnam
+*.mpsim
+*.html
+*.shx
+*.shp
+*.prj
+*.dbf
+*.cpg
