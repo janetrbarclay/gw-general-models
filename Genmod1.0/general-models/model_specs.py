@@ -128,6 +128,12 @@ nhd_dir = base_dir + '/input_data/NHDPlusV2Data'
 #            at: https://www.mrlc.gov/nlcd11_data.php
 nlcd_dir = base_dir + '/input_data/NLCD/nlcd_2011_landcover_2011_edition_2014_10_10'
 
+#Used for landcover in N model  
+#            Center for Land use Education and Research (CLEAR), 2016. 2010lc_06apr2016_v2-03_ctstp83.img, 
+#            http://clear.uconn.edu/projects/landscape/download/LIS_landcover2010_v2-03_ctstp83.zip
+#            accessed 12/5/2019
+clear_dir = base_dir + '/input_data/CLEAR'
+
 #Used for bedrock surface elevation
 #           Soller, D.R., and Garrity, C.P., 2018, Quaternary sediment thickness and bedrock topography of the 
 #           glaciated United States east of the Rocky Mountains: U.S. Geological Survey Scientific 
@@ -179,6 +185,21 @@ alt_recharge_SWB_NAWQA = base_dir + '/input_data/recharge_SWB_NAWQA'
 #			Falcone, J.A., 2016, U.S. block-level population density rasters for 1990, 2000, and 2010: U.S. Geological 
 #			Survey data release, http://dx.doi.org/10.5066/F74J0C6M.
 pop_den_dir = base_dir + '/input_data/pden2010_block/pden2010_block/'
+
+
+
+#soil properties come from the gridded soil survey. Soil map layers were generated using the Soil Data Development toolbox in 
+#           ArcMap and the "Create Soil Map Series" tool within the gSSURGO Mapping Toolset. Map layers were converted to rasters using
+#           the "Convert Soil Map Layers to Rasters" tool within the gSSURGO Raster Toolset with a 30m cell size  and then merged using 
+#           the "Mosaic to New Raster" tool within the Data Management toolset.
+soil_dir = base_dir + '/input_data/Soils/'
+
+
+#N deposition data come from  
+#           National Atmospheric Deposition Program, 2018. Total Deposition Maps, v2018.01.
+# http://nadp.slh.wisc.edu/committees/tdep/tdepmaps/ . accessed 12/2/2019
+
+NDep_dir = base_dir + '/input_data/N_Dep/'
 
 # paths to executables
 mfpth = base_dir + '/executables/MODFLOW-NWT_1.0.9/bin/MODFLOW-NWT_64.exe'
