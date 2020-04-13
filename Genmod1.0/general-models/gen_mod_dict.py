@@ -166,7 +166,7 @@ rock_riv_dict['river_depth'] = 10. * ft2m
 rock_riv_dict['bedrock_thk'] = 100.0 * ft2m
 rock_riv_dict['stream_bed_kadjust'] = 1.0
 rock_riv_dict['coastal_sed_thk'] = 5.0
-rock_riv_dict['coastal_sed_kadjust'] = 5.0
+rock_riv_dict['coastal_sed_kadjust'] = 50.0
 
 
 #water use parameters
