@@ -282,7 +282,7 @@ class PolygonGridIntersection(object):
         from shapely.geometry import Point, Polygon
 
         holes = None
-        if kwargs.has_key('holes'): holes = kwargs['holes']
+        if 'holes' in kwargs: holes = kwargs['holes']
 
         #initialize the result arrays
         self.nodelist = []
