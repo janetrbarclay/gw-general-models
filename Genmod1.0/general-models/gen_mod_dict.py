@@ -145,9 +145,9 @@ if scen ==6:
 # make initial guesses for K (these set the streambed K values which don't vary with calibration)
 # new values will happen because of the JN4 in which parameter estimation occurs
 K_dict = {}
-K_dict['K_fine'] = 10.0 * ft2m
-K_dict['K_coarse'] = 100.0 * ft2m
-K_dict['K_streambed'] = 100.0 * ft2m
+K_dict['K_fine'] = 3.0 * ft2m
+K_dict['K_coarse'] = 30.0 * ft2m
+K_dict['K_streambed'] = 30.0 * ft2m
 K_dict['K_lakes'] = 10000.0 * ft2m
 K_dict['K_bedrock'] = 1 * ft2m
 
@@ -164,7 +164,8 @@ rock_riv_dict['stream_width'] = 10. * ft2m
 rock_riv_dict['stream_bed_thk'] = 1. * ft2m
 rock_riv_dict['river_depth'] = 10. * ft2m
 rock_riv_dict['bedrock_thk'] = 100.0 * ft2m
-rock_riv_dict['stream_bed_kadjust'] = 1.0
+# rock_riv_dict['stream_bed_kadjust'] = 0.1
+rock_riv_dict['stream_bed_kadjust'] = 1
 rock_riv_dict['coastal_sed_thk'] = 5.0
 rock_riv_dict['coastal_sed_kadjust'] = 50.0
 
@@ -181,11 +182,15 @@ useResPerCap = 0.18 	#per capita use, m3/d, based on the median value (47 gallon
 #		for 2015.” U.S. Geological Survey Data Release, June 2018. 
 #		https://www.sciencebase.gov/catalog/item/5af3311be4b0da30c1b245d8.
 
+popThreshold = 3 #minimum number of people per model cell, cells with less than this have their population iteratively added to
+# cells closer to the road network until the population in all cells is >=3 or 0
 
 #variables for sea-level
 sea_level = 0 #elevation of sea level (m)
 den_salt = 1022 #density of saltwater in kg/m3, this is based on 29 ppt salinity at 10C
 den_fresh = 1000 #density of freshwater in kg/m3
+
+inlandCoastalAsDrains = True
 
 # Create dictionary for model location information. Example dictionaries, commented-out, for other model areas follow the
 # example model, "Assabet".
