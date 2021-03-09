@@ -104,7 +104,7 @@ ft2m = 0.3048006096012192
 
 # set pathnames for data sources
 
-base_dir = 'C:/workspace/gw-general-models/Genmod1.0'
+base_dir = 'C:/Users/jbarclay/OneDrive - DOI/gw-general-models/Genmod1.0'
 proj_dir = base_dir + '/subprojects/siteGeneral'
 
 #Translate geologic information into hydrologic properties
